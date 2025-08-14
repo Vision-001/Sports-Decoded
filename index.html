@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know your Sport</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+         }
+
+         .home-page{
+            text-align: center;
+            padding: 200px;
+            color: rgb(37, 89, 129);
+            font-size: 30px;
+         }
+         body{
+            background-image: url('Images/sports.jpg');
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+         }
+         nav .logo{
+            color: white;
+            font-size: 33px;
+            font-weight: bold;
+            line-height: 70px;
+            padding-left: 110px;
+         }
+         nav{
+            height: 70px;
+            background-color: crimson;
+            box-shadow: 0 3px 15px rgba(0,0,0,.4);
+         }
+         nav ul{
+            float: right;
+            margin-right: 30px;
+         }
+         nav ul li{
+            display: inline-block;
+         }
+         nav ul li a{
+            color: white;
+            display: block;
+            padding: 0 15px;
+            line-height: 70px;
+            font-size: 20px;
+            background: crimson ;
+            transition: .5s;
+         }
+         nav ul li a:hover,nav ul li a.active{
+            color: #053838;
+         }
+         nav ul ul {
+            position: absolute;
+            border-top: 3px solid #23dbdb;
+            opacity: 0;
+            display: none;
+         }
+         nav ul li:hover>ul {
+            top: 70px;
+            opacity: 1;
+            display: block;
+         }
+         nav ul ul li{
+            width: 180px;
+            display: list-item;
+            position: relative;
+            border: 1px solid #042331;
+         }
+         nav ul ul li a{
+            line-height: 50px;
+         }
+         nav ul ul ul{
+            border-top: none;
+         }
+         nav ul ul ul li{
+            top: -70px;
+            left: 150px;
+         }
+    </style>
+</head>
+<body>
+    <nav>
+       <label class="logo">SPORTS DECODED</label>
+       <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li> <a href="#">       Menu         </a> 
+            <ul>
+                <li><a href="#">Basketball  </a><ul><li>Products</li></ul></li>
+                <li><a href="#">Cricket     </a><ul><li>Products</li></ul></li>
+                <li><a href="#">Hockey      </a><ul><li>Products</li></ul></li>
+                <li><a href="#">Kho-kho     </a><ul><li>Products</li></ul></li>
+                <li><a href="#">Football    </a><ul><li>Products</li></ul></li>
+                <li><a href="#">Boxing      </a><ul><li>Products</li></ul></li>
+                <li><a href="#">Swimming    </a><ul><li>Products</li></ul></li>
+                <li><a href="#">Rugby       </a><ul><li>Products</li></ul></li>
+                <li><a href="#">Volleyball  </a><ul><li>Products</li></ul></li>
+            </ul>
+        </li>
+        <li> <a href="#">       Contact      </a> </li>
+        <li> <a href="#">       About        </a> </li>
+       </ul>
+    </nav>
+    <div class="home-page">
+        <h1>KNOW YOUR SPORT</h1>
+        <h3>Master the Rules, Master the Game.</h3>
+    </div>
+</body>
+</html>
